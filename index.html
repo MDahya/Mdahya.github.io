@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mobile Repair</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link href="https://fonts.googleapis.com/icon?family=Spirax" rel="stylesheet">
+<script type="text/javascript">
+	//<!-- Header For MObile -->
+	function myFunction(){
+		document.getElementById("mySidebar").style.display="none";
+		document.getElementById("closebtn").style.display = "none";
+    	document.getElementById("openmenuicon").style.display = "block";
+	}
+function w3_open() {
+	document.getElementById("openmenuicon").style.display = "none";
+	document.getElementById("closebtn").style.display = "block";
+
+    document.getElementById("mySidebar").style.display = "block";
+
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("closebtn").style.display = "none";
+    document.getElementById("openmenuicon").style.display = "block";
+}
+
+//------Searchbar-----------	
+	function openSearchBar(){
+		document.getElementById("SearchBarBtn").style.display="none";
+		document.getElementById("SearchBar").style.display="block";
+	}
+
+//--------------book appointment / device drodown.......		
+				function devicemenu() {
+			var x = document.getElementById("device").value;
+			
+				if(x=="CellPhone")
+					{
+					document.getElementById("CellPhone").style.display = "block";
+					document.getElementById("iPad/Tablet").style.display = "none";
+					document.getElementById("Laptop/Desktop").style.display = "none";
+					}
+				else if(x=="iPad/Tablet")
+					{
+					document.getElementById("CellPhone").style.display = "none";
+					document.getElementById("iPad/Tablet").style.display = "block";
+					document.getElementById("Laptop/Desktop").style.display = "none";
+					}
+				else if(x == "Laptop/Desktop")
+					{
+					document.getElementById("CellPhone").style.display = "none";
+					document.getElementById("iPad/Tablet").style.display = "none";
+					document.getElementById("Laptop/Desktop").style.display = "block";
+					}
+				else
+					{
+					document.getElementById(x).style.display = "none";
+					}
+				}
+//------------------------appointment----------			
+		
+	function ap_form(){
+		document.getElementById("Appointment").style.display="block";
+	}
+
+
+</script> 
+</head>
+<body>
+	  <!------------ Header For Mobile Screen (SideBar) ----------->
+<div class="w3-top">
+	<div class="w3-black w3-padding" id="MobileMenu">
+    	<header class="w3-bar  w3-margin-left" >
+    	<h2 class="w3-bar-item  font">My Phone</h2>
+  			<button class="w3-bar-item w3-button w3-right w3-margin-right w3-dropdown-hover  w3-xlarge" id="openmenuicon" onclick="w3_open()"><i class="fa fa-bars"></i></button><button class="w3-bar-item w3-button w3-right w3-margin-right  w3-xlarge" onclick="w3_close()" class="w3-bar-item w3-large" id="closebtn"><i class="fa fa-close"></i></button>
+		</header>
+	</div>
+
+	<div class="w3-bar-block w3-border-right mobile-container" style="display:none" id="mySidebar">
+	<div class="w3-bar-block w3-border">
+		<div  class="w3-half w3-center w3-gray  w3-padding w3-mobile">
+      	<form class="searchbtn">
+          <input type="text" placeholder="Search.." name="search" /><button type="submit"><i class="fa fa-search"></i></button>
+      	</form>
+   		 </div>
+	<a href="#Home" class="w3-bar-item w3-button w3-center " onclick="myFunction()">Home</a>	
+  	<div class="w3-dropdown-hover w3-center">
+  	 	<a class="w3-button w3-center">Repairs</a>
+  			<div class="w3-dropdown-content w3-bar-block w3-card-4 w3-center">
+       	   		<a href="#ContactUs" onclick="myFunction()" class="w3-bar-item w3-button">Link 1</a>
+           		<a href="#"  class="w3-bar-item w3-button">Link 2</a>
+           		<a href="#" class="w3-bar-item w3-button">Link 3</a>
+        	</div>
+    </div>
+      <a href="#myPhone" onclick="myFunction()"  class="w3-bar-item w3-button  w3-center">About Us</a>
+      <a href="#Appointment" onclick="ap_form(); myFunction() " class="w3-bar-item w3-button w3-center"><h4 class="blink">Book Appointment</h4></a>  
+      <a href="#ContactUs" onclick="myFunction()" class="w3-bar-item w3-button w3-center">Contact Us</a>
+	</div>
+</div>
+
+
+<!--  -------------- for large Screen    -->
+<div class=" w3-black w3-top" id="LargeScreenHeader">
+	<div class="w3-quarter Logo">
+    <h2 class="w3-bar w3-center font" >My Phone</h2>
+    </div>
+    <div class="w3-bar w3-threequarter w3-padding w3-right lapyhdr">
+  		<a href="#Home" class="w3-bar-item w3-button">Home</a>
+  			<div class="w3-dropdown-hover">
+  	 			<button class="w3-button">Repairs</button>
+  				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+       	   			<a href="#ContactUs" class="w3-bar-item w3-button">Link 1</a>
+           			<a href="#" class="w3-bar-item w3-button">Link 2</a>
+      				<a href="#" class="w3-bar-item w3-button">Link 3</a>
+       			</div>
+    		</div>
+      	<a href="#myPhone" class="w3-bar-item w3-button ">Aboust Us</a>
+      	<a href="#Appointment" class="w3-bar-item w3-button" onclick="ap_form()"><label class="blink">Book Appointment</label></a>  
+      	<a href="#ContactUs" class="w3-bar-item w3-button">Contact Us</a>
+   		<div class="w3-third ">
+      		<button class="w3-button" id="SearchBarBtn" onclick="openSearchBar();"><i class="fa fa-search w3-large "></i></button>
+      		<form class="searchbtn " id="SearchBar">
+         		 <input type="text"  placeholder="Search.." name="search" /><button type="submit" onclick="openSearchBar"><i class="fa fa-search"></i></button>
+      		</form>
+    	</div>
+	</div>     
+</div> 
+
+
+</div>
+<!------------------- Page Contents (Home/Display Image) --------------------->
+<div class="w3-text-white " id="Home">
+	<img src="11.png" style="width:100%;min-height:100vh;max-height:100vh;">
+	<div class=" w3-padding w3-display-middle w3-center">
+      <h1 class="font">My Phone</h3>
+      <h3 class="font"><b>Experts in Phone Repairs</b></h3>   
+    </div>
+</div>
+<!------------------------ Contents (Why My Phone?) ---------------------------->
+<section class="w3-container w3-padding" id="myPhone">
+	<h2 class="w3-center"><strong>Why Choose Mysite (Contents of About Us)</strong></h2>
+	<div class="w3-half w3-padding">
+		<h3 > Lorem Ipsum</h3>
+		<p>It is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div>
+	<div class="w3-half w3-padding">
+		<h3 > Lorem Ipsum</h3>
+		<p>It is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div>
+	<div class="w3-half w3-padding">
+		<h3 > Lorem Ipsum</h3>
+		<p>It is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div>
+	<div class="w3-half w3-padding">
+		<h3 > Lorem Ipsum</h3>
+		<p>It is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div>
+</section>
+<!------------------------ Contents (Contact Us) ---------------------------->
+<div class="w3-padding" style="background-color: #f2f2f2;" id="ContactUs">
+	<div class="w3-center">
+		<h2><strong>CONTACT US</strong></h2>	
+	</div>
+	<div class="w3-cell-row w3-mobile" >
+			<div class= " w3-container w3-cell w3-padding w3-mobile">
+				<div class="mapouter ">
+					<div class="gmap_canvas">
+						<iframe width="700px" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=laurel&t=&z=7&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+						</iframe>
+						<a href="https://www.pureblack.de/google-maps/"></a>
+					</div>
+					
+				</div>
+			</div>
+				<div class="w3-container w3-cell w3-mobile">
+				<p>	<a href="#"><i class="fa fa-map-marker w3-xlarge"></i>: Maryland, USA 12345</a></p>
+				<p><a href="#"><i class="fa fa-phone w3-xlarge"></i>:+1 123 456 7890</a></p>
+				<p><a href="#"><i class="fa fa-envelope w3-xlarge" ></i>: 123abcabc@xyz.com</a>	</p>	
+				</div>
+				
+			<div class="w3-container w3-cell w3-mobile contactform" >
+				<p class="w3-center">If you have any Question? Please feel free to contact us</p>
+				<form class="w3-padding" >
+					<div class="w3-row">
+						<p style="width: 45%;"  class="w3-left">
+				<input type="text" name="name"  placeholder="First Name" />
+			</p>
+			<p class="w3-right" style="width:45%;">
+				<input type="text" name="name"  placeholder="Last Name" />	
+				</p>
+			</div>
+			<p><input type="email" name="email" placeholder="Enter Email ID"/></p>
+				<p><textarea name="textarea" id="textarea" name="message" placeholder="Enter Your Message Here"></textarea></p>
+				<p><input type="submit" class="w3-button w3-gray" name="Submit" value="Submit" /></p>
+				</form>
+			</div>
+	</div>
+</div>
+
+<!-----------------Contents(Book An Appointment) ---------------------->
+	
+<div id="Appointment" class="w3-modal">
+	<div class="w3-modal-content w3-animate-zoom w3-padding" style="max-width:600px; ">
+		<h3 class="w3-center w3-margin-left w3-margin-right w3-padding font w3-mobile"><strong> Schedule An Appointment Here</strong> </h3>
+		<span onclick="document.getElementById('Appointment').style.display='none'" class="w3-button w3-display-topright w3-xlarge w3-hover-green">&times;</span>
+		<div class="w3-row-padding">
+			<div class="w3-half">
+				<label>First Nme:</label>
+				<input type="text" name="fname" class="w3-input" id= "form_input"  required=""/>
+			</div>
+			<div class="w3-half">
+				<label>Last Name:</label>
+				<input type="text" name="lname" class="w3-input" id= "form_input" required=""/>
+			</div>
+		</div>
+
+		<p class="w3-margin-left w3-margin-right"><label>Mobile No.: </label><input type="tel" name="mobileno" class="w3-input" id= "form_input" style="border-bottom:2px solid gray" /></p>
+
+		<p class="w3-margin-left w3-margin-right"><label>Email ID: </label><input type="email" name="email" class="w3-input" id= "form_input" required="" /></p>
+
+		<div class="w3-row-padding">
+			<div class="w3-third w3-margin-right">
+				<label>Date:</label>
+				<input type="date" class="w3-input" name="Date"  id="select" />
+			</div>
+			<div class="w3-half w3-right">
+				<label>Time:</label>
+				<div class="w3-row">
+					<div class="w3-container w3-cell">
+					<select class="w3-select" id="select" name="option" >
+					<option value="1">10:30</option>
+					<option value="2">11:00</option>
+					<option value="3">11:30</option>
+					<option value="4">12:00</option>
+					<option value="5">12:30</option>
+					<option value="6">1:00</option>
+					<option value="7">1:30</option>
+					<option value="8">2:00</option>
+					<option value="9">2:30</option>
+					<option value="10">3:00</option>
+					<option value="11">3:30</option>
+					<option value="12">4:00</option>
+					<option value="13">4:30</option>
+					<option value="14">5:00</option>
+					<option value="15">5:30</option>
+					<option value="16">6:00</option>
+					<option value="17">6:30</option>
+					<option value="18">7:00</option>
+					<option value="19">7:30</option>
+					<option value="20">8:00</option>
+					<option value="21">8:30</option>
+					<option value="22">9:00</option>
+					<option value="23">9:30</option>	
+					</select>
+					</div>
+					<div class="w3-container w3-cell">
+						<select class="w3-select" id="select" name="option">
+					<option value="1">AM</option>
+					<option value="2">PM</option>
+						</select>
+					</div>
+				</div>	
+			</div>
+		</div>			
+	<div class="w3-row-padding ">
+		<div class="w3-third">
+			<label>Device:</label>
+			<select class="w3-select" id="device" name="option" onchange="devicemenu()" autofocus="select" style="padding:5px;border-bottom:2px solid gray; margin-bottom:12px; ">
+			<option value=" Select Device">Select Device</option>
+			<option value="CellPhone">Cell Phone</option>
+			<option value="iPad/Tablet">iPad/Tablet</option>
+			<option value="Laptop/Desktop">Laptop/Desktop</option>
+			</select>
+		</div>
+	</div>	
+		<div class=" w3-container w3-center" id="CellPhone" style="display: none;">
+			<div class="w3-third w3-padding">
+      			<p><i class="fa fa-apple w3-xxxlarge"></i></p>
+      				<select class="w3-select" id="select" name="option">
+					<option value="11">iPhone 4</option>
+					<option value="2">iPhone 4s</option>
+					<option value="11">iPhone 5</option>
+					<option value="3">iPhone 5c</option>
+					<option value="4">iPhone 5s</option>
+					<option value="5">iPhone 6</option>
+					<option value="6">iPhone 6 Plus</option>
+					<option value="7">iPhone 6s</option>
+					<option value="8">iPhone 6s Plus</option>
+					<option value="9">iPhone 7</option>
+					<option value="10">iPhone 7 Plus</option>
+					<option value="11">iPhone 8</option>
+					<option value="11">iPhone 8 Plus</option>
+					<option value="12">iPhone X</option>
+					<option value="13">iPhone SE</option>	
+					</select>
+      		</div>
+      		<div class="w3-third w3-padding">
+      			<p><i class="fa fa-windows w3-xxxlarge w3-text-blue"></i></p>
+      			<select class="w3-select" id="select" name="option">
+					<option value="11">Microsoft Lumia 640 XL</option>
+					<option value="2">Nokia Lumia 635</option>
+					<option value="11">Nokia Lumia 635</option>
+					<option value="3">Nokia Lumia 530</option>
+					<option value="4">Nokia Lumia 735</option>
+					<option value="5">Nokia Lumia 640</option>
+					<option value="6">Nokia Lumia 930</option>
+					</select>
+      		</div>
+      		<div class="w3-third w3-padding">
+      			<p><i class="fa fa-android w3-xxxlarge w3-text-light-green w3-white"></i></p>
+      			<select class="w3-select" id="select" name="option">
+						<option value="11">Samsung Note3</option>
+					<option value="2">Samsung Note2</option>
+					<option value="3">Samsung Galaxy S</option>
+					<option value="3">Samsung Galaxy S2</option>
+					<option value="1">Samsung Galaxy S3</option>
+					<option value="3">Samsung Galaxy S4</option>
+					<option value="4">Samsung Galaxy S5</option>
+					<option value="5">Samsung Galaxy S6</option>
+					</select>
+      		</div>
+    	</div>
+    	<div class=" w3-container w3-center" id="iPad/Tablet" style="display: none;">
+			<div class="w3-third w3-padding">
+      			<p><i class="fa fa-apple w3-xxxlarge"></i></p>
+      				<select class="w3-select" id="select" name="option">
+					<option>iPad Air</option>
+					<option>iPad Mini Air</option>
+					</select>
+      		</div>
+      		<div class="w3-third w3-padding">
+      			<p><i class="fa fa-windows w3-xxxlarge w3-text-blue"></i></p>
+      			<select class="w3-select" id="select" name="option">
+					<option>Tablet</option>
+					</select>
+      		</div>
+      		<div class="w3-third w3-padding">
+      			<p><i class="fa fa-android w3-xxxlarge w3-text-light-green w3-white"></i></p>
+      			<select class="w3-select" id="select" name="option">
+					<option value="11">Samsung Tablet</option>
+					</select>
+      		</div>
+    	</div>	
+    	<div class=" w3-container w3-center" id="Laptop/Desktop" style="display: none;">
+			<div class="w3-third w3-padding">
+      			<p><i class="fa fa-apple w3-xxxlarge"></i></p>
+      				<select class="w3-select" id="select" name="option">
+					<option value="11">MacBook</option>
+					<option value="2">MacBook Air</option>
+					<option value="11">MacBook Pro</option>
+					<option value="3">iMac</option>
+					<option value="4">iMac Pro</option>	
+					</select>
+      		</div>
+      		<div class="w3-third w3-padding">
+      			<p><i class="fa fa-windows w3-xxxlarge w3-text-blue"></i></p>
+      			<select class="w3-select" id="select" name="option">
+					<option value="11">Sony Vio</option>
+					<option value="2">Lenovo</option>
+					<option value="11">HP</option>
+					<option value="3">Samsung</option>
+					<option value="4">Dell</option>
+					<option value="5">Toshiba</option>
+				
+					</select>
+      		</div>
+      		<div class="w3-third w3-padding">
+      			<p><i class="fa fa-android w3-xxxlarge w3-text-light-green w3-white"></i></p>
+      			 <select class="w3-select" id="select" name="option">
+					<option value="11">Google PixelBook</option>
+			      </select>
+      		</div>
+    	</div>
+		
+		<div class="w3-half w3-padding">
+			<label>Service:</label>
+			<select class="w3-select" id="select" name="option">
+			<option value="1">Battery Relacement</option>
+			<option value="2">Camera Replacement</option>
+			<option value="3">Power Button Replacement</option>
+			<option value="4">Screen Replacement</option>
+			</select>
+		</div>
+	
+		
+	
+	<div class="w3-container">
+		<label>Descriptions/Message :</label>
+		<textarea name="Descriptions" placeholder="Enter Descriptions/Message Here" class="Message"></textarea> 	
+		
+	</div>
+		
+		<div class="w3-row-padding">
+			<div class="w3-full">
+				<button class="w3-block w3-green w3-hover w3-large w3-border-gray " style="height:40px;">Confirm Appointment</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--------------------------------- Footer  ---------------------------------------->
+
+<footer class=" w3-mobile" >					
+  <div class="w3-black w3-container w3-center ">
+  	<div style="margin-top:-25px;" >
+  	<a href="index.html" class="w3-button w3-red "><i class="fa fa-angle-double-up w3-xxlarge"></i></a>
+  </div>
+  			<div class="w3-row w3-container w3-xxlarge " >
+			<a href="https://www.facebook.com/" class="fa fa-facebook w3-button fticons w3-hover-green"></a>
+				<a href="https://twitter.com/" class="fa fa-twitter w3-button fticons w3-hover-green"></a>
+				<a href="https://www.instagram.com/" class="fa fa-instagram w3-button fticons w3-hover-green"></a>
+				<a href="https://www.whatsapp.com/" class="fa fa-whatsapp w3-button fticons  w3-hover-green"></a>
+			</div>
+			<div>		
+  <p>Minhaz Shaikh &copy;xxxx.</p>
+  </div>
+  <div>
+</footer>
+</body>
+</html>
