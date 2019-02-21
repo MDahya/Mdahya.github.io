@@ -66,25 +66,7 @@ function w3_close() {
 
 				//------------------------content page---------//
 
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 4000); // Change image every 2 seconds
-}
 
 
 //------------------------appointment----------	---//		
@@ -248,7 +230,27 @@ function showSlides() {
  			 <span class="dot"></span> 
 	</div>
 </section>
+<script type="text/javascript">
+var slideIndex = 0;
+showSlides();
 
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script> 
 <!------------------------ Contents (Contact Us) ---------------------------->
 <section class="w3-padding" style="background-color: #f2f2f2;" id="ContactUs">
 	<div class="w3-center">
@@ -266,7 +268,7 @@ function showSlides() {
 				</div>
 			</div>
 				<div class="w3-container w3-cell w3-mobile">
-				<p>	<a href="#"><i class="fa fa-map-marker w3-xlarge"></i>:Laurel, MD, USA 20723</a></p>
+				<p><a href="#"><i class="fa fa-map-marker w3-xlarge"></i>:Laurel, MD, USA 20723</a></p>
 				<p><a href="#"><i class="fa fa-phone w3-xlarge"></i>:+1 123 456 7890</a></p>
 				<p><a href="#"><i class="fa fa-envelope w3-xlarge" ></i>:minhazdahya@gmail.com</a></p>	
 				</div>
