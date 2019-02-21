@@ -215,7 +215,7 @@ form.searchbtn button{
     height: 35px;
     padding: 0px 3px 1px 0px;
     background:gray;    
-    border-left: none;
+    
     cursor: pointer;
 }
 form.searchbtn::after {
