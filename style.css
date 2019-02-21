@@ -195,13 +195,20 @@ input[type=text], input[type=email]{
 @media only screen and (max-width:500px) {
 
 /*------------- Header For Mobile Screen -----------------*/
+.mobile-container {
+  max-width: 480px;
+  margin:0;
+  background-color: #555;
+  color: white;
+ }
 form.searchbtn input{	/*----search bar in header for all screen---*/
 	width:70%;
 	height:35px;
 	border-right: none;
  	border:2px solid black;
  	padding: 0px 0px 1px 3px;
- 	
+border-radius: 0px;
+border-style: hidden; 	
 }
 form.searchbtn button{
 	width:20%; 
@@ -255,12 +262,7 @@ form.searchbtn::after {
 	height:400px;
 	width:100%;
 }
-.mobile-container {
-  max-width: 480px;
-  margin:0;
-  background-color: #555;
-  color: white;
- }
+
 }
 /*---------Home Page ---------------*/
 .homepage {
