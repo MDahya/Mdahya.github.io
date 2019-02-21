@@ -44,6 +44,60 @@ form.searchbtn::after {
   	display: none;
   }
 
+/*------------------------- Contents -----------*/
+.w3-content_text{
+	text-align:center;
+	margin-left:5%;margin-right:5%;
+	color: #424949;
+}
+.content_heading{
+	font-family: Verdana;
+	color: #27ae60;
+}
+h3{
+	font-family:Arial;
+
+}
+hr{
+	border:1px solid #D0D3D4;
+}
+img{
+	width: 150px;
+	height: 150px; 
+}
+/*----------slideshow (reviews)----------------*/
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */ 
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
  /*------------------Book An Appointment--------------------------*/
  .blink{
  	color: yellow;
