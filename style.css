@@ -214,8 +214,10 @@ form.searchbtn input{	/*----search bar in header for all screen---*/
 }
 input[type="search"]{
    -moz-appearance: none;/* older firefox */
-   -webkit-appearance: none; /* safari, chrome, edge and ie mobile */
+ /*  -webkit-appearance: none; /* safari, chrome, edge and ie mobile */
    appearance: none; /* rest */
+   -webkit-appearance: textfield;
+
 }	
 form.searchbtn button{
 	width:20%; 
