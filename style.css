@@ -10,9 +10,7 @@ body{
 	  margin-bottom: 0px;    
 	  font-size: 12px;
 }
-a{
-	text-decoration-line:none;
-}
+
 
 /*------------------------Header For LargeScreen-----------------*/
 #MobileMenu{
@@ -185,10 +183,10 @@ input[type=text], input[type=email]{
 	width:300px;
 }
 .Logo{
-	width:15%;
+	width:10%;
 	text-align: center;
 	padding: 5px; 
-	font-size: 16px;
+	font-size: 14px;
 }
 .lapyhdr{
 	width: 85%;
@@ -197,7 +195,7 @@ input[type=text], input[type=email]{
 /*-------------------------------Mobile Screen--------------------------------*/
 @media only screen and (max-width:500px) {
 .logo_font{
-	font-size: 16px
+	font-size: 12px;
 }
 /*------------- Header For Mobile Screen -----------------*/
 .mobile-container {
