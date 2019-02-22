@@ -1,7 +1,9 @@
 body{
 	text-decoration-line: none;
 }
- 
+ a{
+ 	text-underline-position: unset;
+ 	 }
 .font{
 	 font-family: 'Times', serif;
 	  padding-top:0px;
