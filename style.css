@@ -174,13 +174,13 @@ input[type=text], input[type=email]{
 .mapouter{
 	text-align:right;
 	height:400px;
-	width:300px;
+	width:100%;
 	}
 .gmap_canvas {
 	overflow:hidden;
 	background:none!important;
-	height:200px;
-	width:100px;
+	height:400px;
+	width:300px;
 }
 .Logo{
 	width:auto;
@@ -188,7 +188,7 @@ input[type=text], input[type=email]{
 	font-size: 16px;
 }
 .lapyhdr{
-	width: 85%;
+	width:90%;
 }
 }
 /*-------------------------------Mobile Screen--------------------------------*/
