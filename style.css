@@ -185,8 +185,7 @@ input[type=text], input[type=email]{
 .Logo{
 	width:auto;
 	text-align: center; 
-	font-size: 14px;
-	text-decoration:none;
+	font-size: 16px;
 }
 .lapyhdr{
 	width: 85%;
