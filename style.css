@@ -207,19 +207,12 @@ form.searchbtn input{	/*----search bar in header for all screen---*/
 	border-right: none;
  	border:2px solid black;
  	padding: 0px 0px 1px 3px;
-border-radius: 0px;
-border-style: hidden; 	
-
+}
+input[type=search]{
+   -moz-appearance: none;/* older firefox */
+   -webkit-appearance: none; /* safari, chrome, edge and ie mobile */
+   appearance: none; /* rest */
 }	
-textarea,
-input.text,
-input[type="text"],
-input[type="button"],
-input[type="submit"],
-.input-checkbox {
--webkit-appearance: none;
-border-radius: 0;
-} 
 form.searchbtn button{
 	width:20%; 
     height: 35px;
