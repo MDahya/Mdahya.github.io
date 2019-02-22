@@ -183,7 +183,7 @@ input[type=text], input[type=email]{
 	width:300px;
 }
 .Logo{
-	width:10%;
+	width:auto;
 	text-align: center; 
 	font-size: 14px;
 	text-decoration:none;
