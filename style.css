@@ -205,14 +205,6 @@ input[type=text], input[type=email]{
  .font{
  	font-size: 12px;
  }
- .logo_font{
-	  font-family: 'Times', serif;
-	  padding-top:0px;
-	  padding-bottom: 0px;
-	  margin-top: 0px;
-	  margin-bottom: 0px;  
-	  font-size: 16px;
-}
 form.searchbtn input{	/*----search bar in header for all screen---*/
 	width:70%;
 	height:35px;
@@ -224,6 +216,7 @@ input[type="search"]{
    -moz-appearance: none;/* older firefox */
    -webkit-appearance: none; /* safari, chrome, edge and ie mobile */
    appearance: none; /* rest */
+   border-radius: unset;
 
 }	
 form.searchbtn button{
