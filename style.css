@@ -8,6 +8,7 @@ body{
 	  padding-bottom: 0px;
 	  margin-top: 0px;
 	  margin-bottom: 0px;  
+	  font-size: 16px;
 }
 a{
 	text-decoration-line:none;
@@ -200,6 +201,9 @@ input[type=text], input[type=email]{
   margin:0;
   background-color: #555;
   color: white;
+ }
+ .font{
+ 	font-size: 12px;
  }
 form.searchbtn input{	/*----search bar in header for all screen---*/
 	width:70%;
