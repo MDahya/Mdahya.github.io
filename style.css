@@ -8,7 +8,6 @@ body{
 	  padding-bottom: 0px;
 	  margin-top: 0px;
 	  margin-bottom: 0px;  
-	  font-size: 12px;
 }
 .font{
 	 font-family: 'Times', serif;
@@ -196,12 +195,7 @@ input[type=text], input[type=email]{
 	width:15%;
 	text-align: center;
 	padding: 5px; 
-	font-size: 16px;
-	font-family: 'Times', serif;
-	  padding-top:0px;
-	  padding-bottom: 0px;
-	  margin-top: 0px;
-	  margin-bottom: 0px;
+	
 }
 .lapyhdr{
 	width: 85%;
