@@ -188,6 +188,7 @@ input[type=text], input[type=email]{
 	width:15%;
 	text-align: center;
 	padding: 5px; 
+	font-size: 16px;
 }
 .lapyhdr{
 	width: 85%;
@@ -195,7 +196,9 @@ input[type=text], input[type=email]{
 }
 /*-------------------------------Mobile Screen--------------------------------*/
 @media only screen and (max-width:500px) {
-
+.logo_font{
+	font-size: 16px
+}
 /*------------- Header For Mobile Screen -----------------*/
 .mobile-container {
   max-width: 480px;
