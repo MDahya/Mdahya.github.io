@@ -6,7 +6,7 @@ body{
  	 }
 .font{
 	 font-family: 'Times', serif;
-	  padding-top:0px;
+	  padding-top:0px;              
 	  padding-bottom: 0px;
 	  margin-top: 0px;
 	  margin-bottom: 0px;    
@@ -197,10 +197,6 @@ input[type=text], input[type=email]{
 }
 /*-------------------------------Mobile Screen--------------------------------*/
 @media only screen and (max-width:600px) {
-.logo_font{
-	font-size: 14px;
-	width: 8%;
-}
 /*------------- Header For Mobile Screen -----------------*/
 .mobile-container {
   max-width: 480px;
