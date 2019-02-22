@@ -188,10 +188,13 @@ input[type=text], input[type=email]{
 	font-size: 16px;
 }
 #SearchBarBtn{
+	display: none;
+}
+#SearchBar{
 	display: block;
 }
 }
-/*-------------------------------Mobile Screen--------------------------------*/
+/*-------------------------------Mobile Screen--s------------------------------*/
 @media only screen and (max-width:600px) {
 /*------------- Header For Mobile Screen -----------------*/
 .mobile-container {
