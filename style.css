@@ -196,7 +196,7 @@ input[type=text], input[type=email]{
 @media only screen and (max-width:600px) {
 .logo_font{
 	font-size: 14px;
-	width: 10%;
+	width: 8%;
 }
 /*------------- Header For Mobile Screen -----------------*/
 .mobile-container {
