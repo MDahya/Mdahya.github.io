@@ -183,7 +183,7 @@ input[type=text], input[type=email]{
 .gmap_canvas {
 	overflow:hidden;
 	background:none!important;
-	height:400px;
+	height:400px;               
 	width:300px;
 }
 .Logo{
