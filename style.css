@@ -208,7 +208,7 @@ form.searchbtn input{	/*----search bar in header for all screen---*/
  	border:2px solid black;
  	padding: 0px 0px 1px 3px;
 }
-input[type=search]{
+input[type="search"]{
    -moz-appearance: none;/* older firefox */
    -webkit-appearance: none; /* safari, chrome, edge and ie mobile */
    appearance: none; /* rest */
