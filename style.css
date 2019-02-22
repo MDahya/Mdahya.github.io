@@ -189,8 +189,8 @@ input[type=text], input[type=email]{
 	text-align: center; 
 	font-size: 16px;
 }
-.lapyhdr{
-	width:100%;
+#MobileMenu{
+	display: block;
 }
 }
 /*-------------------------------Mobile Screen--------------------------------*/
