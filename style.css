@@ -166,7 +166,9 @@ input[type=text], input[type=email]{
 
 /*------------------------- For iPad/Tablet Screen---------------------------*/
 @media only screen and (min-device-width:700px) and (max-device-width:1024px) and (orientation : landscape) {		
-
+#LargeScreenHeader{
+	display: none;
+}
 .contactform{			/*---------------Contact Us ---------*/
 	width: 40%;
 }
