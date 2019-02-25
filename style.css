@@ -1,7 +1,8 @@
-body a{
-	text-decoration: none;
+a {
+	text-decoration: none !important ;
 }
-                       
+   
+
 .font{
 	 font-family: 'Times', serif;
 	  padding-top:0px;              
