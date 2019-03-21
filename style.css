@@ -2,15 +2,17 @@ a {
 	text-decoration: none !important ;
 }
    
-
-.font{
+    .font{
 	 font-family: 'Times', serif;
 	  padding-top:0px;              
 	  padding-bottom: 0px;
 	  margin-top: 0px;
 	  margin-bottom: 0px;    
-	  font-size: 12px;
+	
+	  font-size: 18px;
 }
+
+
 
 
 /*------------------------Header For LargeScreen-----------------*/
@@ -190,6 +192,15 @@ input[type=text], input[type=email]{
 }
 /*-------------------------------Mobile Screen--s------------------------------*/
 @media only screen and (max-width:600px) {
+/*---------------font for Book an appointment---------------*/
+.font{
+	 font-family: 'Times', serif;
+	  padding-top:0px;              
+	  padding-bottom: 0px;
+	  margin-top: 0px;
+	  margin-bottom: 0px;    
+	  font-size: 12px;
+}
 /*------------- Header For Mobile Screen -----------------*/
 .mobile-container {
   max-width: 480px;
